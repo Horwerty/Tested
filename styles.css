@@ -1,0 +1,77 @@
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+a {
+      text-decoration: none;
+}
+
+body{
+      background-color: white;
+      font-family: Segoe UI;
+      font-size: medium;
+}
+
+.container {
+      margin: 0 none;
+      padding: 0 20px;
+      max-width: 100%;
+}
+
+li {
+      list-style: none;
+}
+
+header {
+      background-color: rgb(94, 194, 31);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 125px;
+      width: 100%;
+}
+
+.logo {
+      font-family: Arial;
+      font-size: larger;
+}
+
+#UpperNav {
+      color: rgb(102, 242, 15);
+
+}
+
+header nav {
+      position: absolute;
+      top: 80px;
+      left: 0;
+      background-color: rgb(126, 61, 61);
+      height: 50vh;
+      width: 100%;
+      border-top:1px royalblue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.5s linear;
+      clip-path: polygon(20% 0, 80% 0, 20% 0, 20% 0);
+}
+
+.displayNav {
+      clip-path: polygon(0 0, 100% 0, 48% 100%, 48% 100%);
+}
+
+header li {
+      margin-top: 15px;
+      text-transform: uppercase;
+      cursor: pointer;
+      opacity: 0.8; 
+      transition: opacity 0.5s ease-in;
+}
+
+header li :hover {
+      opacity: 1;
+}
