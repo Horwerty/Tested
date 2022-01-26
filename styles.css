@@ -1,28 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Moo+Lah+Lah&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
 
 * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      scroll-behavior: smooth;
 }
 
 a {
       text-decoration: none;
+      color: white;
 }
 
 body{
       background-color: white;
-      font-family: Segoe UI;
-      font-size: medium;
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      margin: 10px;
 }
 
 .container {
-      margin: 0 none;
+      margin: 0 auto;
       padding: 0 20px;
       max-width: 100%;
 }
 
 li {
       list-style: none;
+}
+
+img {
+      width: 100%;
+}
+
+h2 {
+      font-family: "Fugaz One", cursive;
 }
 
 header {
@@ -33,11 +46,17 @@ header {
       align-items: center;
       height: 125px;
       width: 100%;
+      position: sticky;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 9;
 }
 
 .logo {
       font-family: Arial;
       font-size: larger;
+      cursor: pointer;
 }
 
 #UpperNav {
@@ -49,7 +68,7 @@ header nav {
       position: absolute;
       top: 80px;
       left: 0;
-      background-color: rgb(126, 61, 61);
+      background-color: rgb(102, 242, 15);
       height: 50vh;
       width: 100%;
       border-top:1px royalblue;
@@ -57,11 +76,13 @@ header nav {
       justify-content: center;
       align-items: center;
       transition: all 0.5s linear;
-      clip-path: polygon(20% 0, 80% 0, 20% 0, 20% 0);
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 }
 
 .displayNav {
-      clip-path: polygon(0 0, 100% 0, 48% 100%, 48% 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      z-index: 3;
+      transition: all 0.5s linear;
 }
 
 header li {
@@ -73,5 +94,238 @@ header li {
 }
 
 header li :hover {
+      opacity: 1;
+}
+
+header .menu {
+      font-size: 1.5rem;
+      cursor: pointer;
+}S
+
+#hero {
+      background-image: url("https://images.unsplash.com/photo-1603302576837-37561b2e2302?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGxhcHRvcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60");
+      background-size: cover;
+      background-position: center;
+      height: calc(100vh - 80px);
+      color: white;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+}
+
+#hero #heroCover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.146);
+} 
+
+#hero 
+.heroButs,
+h1,
+h3,
+h2 {
+      position: relative;
+      text-align: center;
+}
+
+#hero h1 {
+      font-size: 3rem;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      padding-bottom: 1rem;
+}
+
+#hero h2 {
+      font-size: 1.8rem;
+      color: rgb(15, 183, 15);
+      padding-bottom: 3rem;
+}
+
+#hero h2 {
+      font-size: 1.8rem;
+      padding-bottom: 1.5rem;
+}
+
+button {
+      height: 40px;
+      width: 160px;
+      font-weight: 800;
+      margin: 0 0.5rem;
+      cursor: pointer;
+      border-radius: 10px;
+      border: none;
+      transition: all 0.5s linear;
+}
+
+button:hover {
+      background-color: greenyellow;
+      color: honeydew;
+}
+
+#hero button :nth-child(1) {
+      background-color: greenyellow;
+      color: honeydew;
+}
+
+#hero button :nth-child(1):hover {
+      color: black;
+      background-color: white;
+}
+
+#ABOUT h2 {
+      text-align: center;
+      margin: 2rem 0;
+}
+
+#ABOUT .statement p {
+      margin: 1rem 0;
+      font-size: 0.8rem;
+      line-height: 1.3rem;
+}
+
+#ABOUT button {
+      background-color: yellowgreen;
+      color: whitesmoke;
+      margin: 0 0 2rem;
+}
+
+#ABOUT button:hover {
+      color: black;
+      background-color: darkgoldenrod;
+}
+
+#ABOUT .aboutpix {
+      width: 100%;
+      height: 20rem;
+      margin-bottom: 2rem;
+}
+
+#ABOUT .aboutpix img {
+      width: 100%;
+      height: 100%;
+}
+
+#Projects {
+      background-color: rgb(137, 220, 110);
+      padding: 1rem 2rem;
+      text-transform: uppercase;
+      border-radius: 10px;
+      background-image: url();
+}
+#Projects h2 {
+      text-align: center;
+      margin-bottom: 10px;
+}
+
+#Projects .gridItem {
+      padding: 4rem;
+      height: 20rem;
+      border-radius: 10px;
+      box-shadow: 2px 2px 2px rgba(20, 20, 20, 0.53), -2px -2px 2px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: all 0.5s ease;
+}
+
+#Projects .gridItem :hover {
+      transform: scale(1.0);
+}
+
+#Projects .gridItem h3 {
+      text-align: center;
+      margin: 0;
+      font-family: sans-serif;
+      font-size: 1.5rem;
+}
+
+#Projects .gridItem img {
+      height: 75%;
+      object-fit: cover;
+      margin: 0.5rem 0;
+      object-position: center center;
+}
+
+#Projects .gridItem p {
+      text-align: center;
+      margin: 0;
+      font-size: 0.85rem;
+      line-height: 1.5rem;
+}
+
+#services {
+      text-align: center;
+      background-color: ghostwhite;
+      padding: 1rem 2rem;
+      margin-top: 20px;
+      height: 20rem;
+}
+
+#services img {
+      height: 95%;
+      object-fit: cover;
+      margin: 0.5rem 0;
+      object-position: center center;
+}
+
+#contacts h2 {
+      text-align: center;
+      margin: 2rem 0;
+      text-transform: uppercase;
+      margin-top: 20px;
+} 
+
+form {
+      width: 100%;
+      padding: 2rem;
+}
+
+form h6 {
+      font-size: 0.9rem;
+      font-weight: normal;
+}
+
+form input {
+      height: 30px;
+      width: 100%;
+      margin: 1rem 0;
+      border-radius: 10px;
+      border: 1px solid gray;
+      padding-left: 1rem;
+}
+
+form textarea {
+      width: 100% !important;
+      height: 200px !important;
+      border-radius: 5px;
+      margin: 1rem 0;
+      border: 1px solid gray;
+      padding: 1rem;   
+}
+
+#contacts button :hover {
+      color: black;
+      background-color: gold;
+      border: 1px solid gray;
+}
+
+footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 50px;
+      border-top: 1px solid gray;  
+}
+
+footer .icons i {
+      margin-left: 0.5rem;
+      font-size: 1.3rem;
+      opacity: 0.7;
+      transition: all 0.5s ease;
+      color: rgb(91, 91, 228);
+}
+
+footer .icons i:hover {
       opacity: 1;
 }
