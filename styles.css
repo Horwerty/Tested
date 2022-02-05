@@ -42,7 +42,6 @@ header {
       background-color: rgb(94, 194, 31);
       color: white;
       display: flex;
-      justify-content: space-between;
       align-items: center;
       height: 125px;
       width: 100%;
@@ -51,6 +50,25 @@ header {
       left: 0;
       width: 100%;
       z-index: 9;
+      justify-content:space-between;
+}
+
+header .search {
+      cursor: pointer;
+}
+
+header .search :hover {
+      transform: scale(1.05);
+}
+
+header input {
+      height: 30px;
+      width: 75%;
+      margin: 5rem 0;
+      border-radius: 10px;
+      border: 1px solid gray;
+      padding-left: 1rem;
+      margin-left: 41px;
 }
 
 .logo {
@@ -203,6 +221,7 @@ button:hover {
 #ABOUT button:hover {
       color: black;
       background-color: darkgoldenrod;
+      transform: scale(1.05);
 }
 
 #ABOUT .aboutpix {
@@ -237,8 +256,8 @@ button:hover {
       transition: all 0.5s ease;
 }
 
-#Projects .gridItem :hover {
-      transform: scale(1.0);
+#Projects .gridItem:hover {
+      transform: scale(1.05);
 }
 
 #Projects .gridItem h3 {
@@ -249,7 +268,7 @@ button:hover {
 }
 
 #Projects .gridItem img {
-      height: 75%;
+      height: 87%;
       object-fit: cover;
       margin: 0.5rem 0;
       object-position: center center;
@@ -258,7 +277,7 @@ button:hover {
 #Projects .gridItem p {
       text-align: center;
       margin: 0;
-      font-size: 0.85rem;
+      font-size: 0.75rem;
       line-height: 1.5rem;
 }
 
@@ -271,9 +290,9 @@ button:hover {
 }
 
 #services img {
-      height: 95%;
+      height: 90%;
       object-fit: cover;
-      margin: 0.5rem 0;
+      margin: 0.8rem 0;
       object-position: center center;
 }
 
@@ -281,7 +300,11 @@ button:hover {
       text-align: center;
       margin: 2rem 0;
       text-transform: uppercase;
-      margin-top: 20px;
+      margin-top: 100px;
+} 
+
+#contacts h6 {
+      margin-bottom: 0;
 } 
 
 form {
@@ -336,4 +359,21 @@ footer .icons i {
 
 footer .icons i:hover {
       opacity: 1;
+}
+
+@media only screen and (min-width: 760px) {
+   .ABOUT {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;   
+   } 
+   
+   .ABOUT .aboutpix {
+         flex: 2;
+   }
+
+   .ABOUT .aboutpix img {
+         border-radius: 10px;
+   }
 }
