@@ -268,7 +268,7 @@ button:hover {
 }
 
 #Projects .gridItem img {
-      height: 87%;
+      height: 80%;
       object-fit: cover;
       margin: 0.5rem 0;
       object-position: center center;
